@@ -1,0 +1,328 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+    color: #222;
+}
+
+/* NAVIGASI */
+header {
+    background: #10213d;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #45b9ff;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 13px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #45b9ff;
+}
+
+/* BERANDA */
+.beranda {
+    min-height: 520px;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e6f0fa;
+}
+
+.teks {
+    max-width: 550px;
+}
+
+.teks h3 {
+    color: #147bb5;
+    margin-bottom: 15px;
+}
+
+.teks h1 {
+    font-size: 42px;
+    color: #10213d;
+}
+
+.teks h1 span {
+    color: #147bb5;
+}
+
+.teks h2 {
+    margin-top: 10px;
+    color: #147bb5;
+}
+
+.teks p {
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+.tombol {
+    display: inline-block;
+    background: #147bb5;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 4px 4px 0 #10213d;
+}
+
+.tombol:hover {
+    background: #10213d;
+}
+
+/* FOTO */
+.foto img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 6px solid white;
+    box-shadow: 10px 10px 0 #147bb5;
+}
+
+/* BAGIAN UMUM */
+section {
+    padding: 65px 10%;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s;
+}
+
+section.muncul {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #10213d;
+}
+
+#beranda {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* TENTANG */
+.tentang p {
+    text-align: center;
+    line-height: 2;
+    max-width: 850px;
+    margin: auto;
+}
+
+/* PENDIDIKAN */
+.pendidikan {
+    background: #e6f0fa;
+}
+
+.isi-kartu,
+.kartu-pengalaman {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.kartu {
+    width: 220px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 0 #b4d5ed;
+}
+
+.kartu h2 {
+    font-size: 19px;
+    color: #147bb5;
+    margin-bottom: 15px;
+}
+
+.kartu p {
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.kartu h4 {
+    color: gray;
+}
+
+/* KEAHLIAN */
+.daftar-keahlian {
+    max-width: 650px;
+    margin: auto;
+}
+
+.daftar-keahlian p {
+    margin: 15px 0 8px;
+}
+
+.garis {
+    height: 13px;
+    background: #d3dfeb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.garis span {
+    display: block;
+    height: 100%;
+    background: #147bb5;
+}
+
+/* HOBI */
+.hobi {
+    background: #e6f0fa;
+}
+
+.daftar-hobi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.daftar-hobi div {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 0 #b4d5ed;
+}
+
+/* MEDIA SOSIAL */
+.sosmed {
+    background: #e6f0fa;
+    text-align: center;
+}
+
+.sosmed .deskripsi {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.daftar-sosmed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.sosmed-card {
+    width: 200px;
+    padding: 25px 15px;
+    background: white;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #10213d;
+    box-shadow: 5px 5px 0 #b4d5ed;
+    transition: 0.3s;
+}
+
+.sosmed-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 8px 10px 0 #147bb5;
+}
+
+.sosmed-card .ikon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.sosmed-card h3 {
+    color: #147bb5;
+    margin-bottom: 10px;
+}
+
+.sosmed-card p {
+    font-size: 14px;
+}
+
+/* KONTAK */
+.kontak {
+    text-align: center;
+    line-height: 2;
+}
+
+/* FOOTER */
+footer {
+    background: #10213d;
+    color: white;
+    padding: 22px;
+    text-align: center;
+}
+
+/* TOMBOL KEMBALI KE ATAS */
+#tombol-atas {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #147bb5;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 #10213d;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .beranda {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .teks h1 {
+        font-size: 32px;
+    }
+
+    .foto img {
+        width: 200px;
+        height: 240px;
+    }
+
+    .kartu {
+        width: 100%;
+        max-width: 300px;
+    }
+}
